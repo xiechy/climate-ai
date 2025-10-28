@@ -256,6 +256,168 @@ Use these exemplar reviews to:
 
 ---
 
+#### 2. Combined Emergent Constraints on Future Extreme Precipitation Changes
+- **Journal:** Nature Climate Change (Nature Portfolio)
+- **Year:** 2024
+- **Paper Title:** "Combined emergent constraints on future extreme precipitation changes"
+- **PDF Filename:** `nat_clim_change_2024_extreme_precipitation_ec.pdf`
+- **Topic:** Combined emergent constraints integrating global warming and extreme precipitation sensitivity to reduce uncertainty in CMIP5/6 projections
+
+**Key Strengths of Review:**
+- Two-round review by two methodologically rigorous reviewers (EC methodology expert + climate scientist)
+- Systematic addressing of overconfidence in combined constraints (following Bretherton & Caldwell 2020 framework)
+- Deep scrutiny of baseline period choice and its physical justification (1851-1900 vs. recent past)
+- Strong emphasis on quantitative reporting and spatial pattern robustness validation
+- Comprehensive treatment of internal variability across scales (global mean vs. regional grid points)
+- Constructive evolution: manuscript significantly improved with added quantification, interpretation, and sensitivity tests
+
+**Notable Sections:**
+
+**Overconfidence Prevention (Reviewer 1):**
+- Core concern: Combining constraints only useful if they provide independent information
+- Required explicit accounting for correlation (r₀=0.28) between ΔTgm and ΔRgm/ΔTgm
+- If correlation ignored: RRV would be overestimated at 51% instead of actual 42%
+- Regional analysis: ignoring ΔR/ΔTgm vs. ΔTgm correlations → 5-25% RRV overestimation
+- Authors incorporated Eq. 9 and 11 covariance terms to avoid overconfident uncertainty reduction
+- Demonstrated method's sensitivity by showing what happens with r₀=0 assumption
+
+**Baseline Period Justification (Reviewers 1 & 2):**
+- R1 challenged 1851-1900 baseline: "portion of change already occurred, making y-axis not just future change"
+- Authors' defense: ΔTgm-related EC requires preindustrial baseline because:
+  - Both 2051-2100 and 1851-1900 have minimal aerosol forcing
+  - trTgm (1970-2022 trend) driven mainly by GHGs, not aerosols
+  - Recent baseline would include aerosol decline response, requiring separate constraint method
+- Sensitivity test with 1970-2022 baseline showed RRV reduction: 42%→41% (combined EC)
+- Authors demonstrated global mean Rgm values similar between 1997-2019 and 1851-1900 (Supplementary Fig. 1)
+- Regional correspondence also shown: differences between periods are small
+
+**Internal Variability Treatment (Reviewer 2):**
+- R2 concern: "Grid-point scale internal variability in precipitation could be large, not negligible like global mean"
+- Authors' response:
+  - Showed spatial maps of internal variability vs. inter-observational-dataset variance (Supplementary Fig. 7)
+  - Most regions: observational dataset differences dominate over internal variability
+  - Note: 1997-2019 averaging reduces internal variability contribution
+  - Acknowledged observational uncertainty sources: station coverage, satellite algorithms, data assimilation, bias correction
+
+**Spatial Pattern Robustness (Reviewer 1):**
+- Demanded CMIP5/6 split validation: "stipple areas with significant correlations in both"
+- Authors created Supplementary Fig. 4: separate correlation maps for CMIP5-only, CMIP6-only, and combined
+- ΔR vs. trTgm correlations similar between CMIP5/6, but CMIP6 shows larger areas of significance (more "hot models")
+- ΔR/ΔTgm vs. R correlations consistent across both ensembles
+- Physical explanation: regional temperature and humidity changes well-related to ΔTgm globally (Shiogama et al. 2024)
+
+**Quantification Requirements (Reviewer 1 - 14 specific requests):**
+- Original manuscript lacked concrete numbers in main text
+- Authors added:
+  - Table 1 & Supplementary Table 2: unconstrained vs. constrained estimates with percentiles
+  - Specific variance reduction percentages (8-30%)
+  - Central estimates with ±1 SD bounds (e.g., ΔRgm/ΔTgm: 2.07 [0.316, 3.82] raw → 2.03 [0.632, 3.44] constrained)
+  - Correlation coefficients explicitly stated (0.55, 0.76)
+  - Standard errors of mean for observational datasets
+  - Spatial area percentages for RRV thresholds
+
+**Method Clarity (Reviewer 2):**
+- R2 confused about "hierarchical EC" vs. "combined EC" terminology
+- Authors clarified:
+  - Hierarchical EC framework (Bowman et al. 2018) used for all single-variable constraints (Figs. 1a-c)
+  - Combined EC methods integrate information from multiple constrained variables
+  - ΔR/ΔTgm-related EC: uses constrained ΔRgm/ΔTgm + raw ΔTgm
+  - Full combined EC: uses constrained ΔTgm + constrained ΔRgm/ΔTgm
+- Added Supplementary Fig. 2: joint distribution visualization of the two constrained variables
+
+**Outlier Sensitivity Testing (Reviewer 1):**
+- R1 noted one model with Rgm≈80 mm/day (major outlier) affects model spread and RRV calculation
+- Authors implemented "1 ESM removed test" (jackknife approach)
+- Supplementary Fig. 3e & 6e: RRVs not sensitive to excluding any single model
+- Demonstrated results robust to ESM sampling, not driven by outliers
+
+**Regional EC Physical Mechanisms (Reviewer 1, expanded in revision):**
+- Why ΔTgm-related EC works regionally: thermodynamic components of ΔR linked to regional T and humidity changes
+- Why ΔR/ΔTgm-related EC effective: precipitation sensitivity to humidity critical worldwide (ITCZ, storm tracks, monsoons)
+- Complementary effectiveness:
+  - ΔTgm-related EC: weak in tropical oceans (large dynamic component)
+  - ΔR/ΔTgm-related EC: strong in major precipitation regions
+  - Combined EC: both constraints reinforce in mid/high latitudes
+- Added 38-line section (L247-285) explaining humidity's role
+
+**Comparison with Other Studies (Reviewer 1):**
+- Cannot quantitatively compare due to different metrics:
+  - This study: absolute changes in Rx1day
+  - Thackeray et al. 2022: ≥99th percentile precipitation
+  - Paik et al. 2023 / Dai et al. 2024: percentage changes in Rx1day
+  - Li et al. 2024: 50-year event intensity changes
+- Authors elaborated on methodological comparisons (L307-328)
+
+**Highlights of Author Response:**
+- Moved humidity analysis from supplementary to main text (added ~40 lines)
+- Created two new summary tables (Table 1, Supplementary Table 2)
+- Added 7 new sensitivity analyses:
+  - Doubled internal variability variance: results robust
+  - 1970-2022 baseline: RRV reduced but method still effective
+  - Jackknife ESM exclusion: not driven by outliers
+  - CMIP5/6 split validation: spatial patterns consistent
+  - Ignored r₀ scenario: quantified overconfidence risk
+- Supplementary Fig. 7: spatial maps of observational uncertainty + internal variability
+- Corrected minor GPCP value error (33.7→33.8 mm/day) and Figure 4f code bug (no result changes)
+- Added detailed descriptions of observational datasets (GPCP, MSWEP2, GSWP3-W5E5)
+- Fixed typo in revised version: "50 percentile" → "50th percentile"
+
+**Relevant for:**
+- Emergent constraints methodology development
+- Combined constraint frameworks (Bretherton & Caldwell 2020 application)
+- Extreme precipitation projection studies
+- CMIP5/6 multi-model ensemble analysis
+- Observational uncertainty quantification (precipitation products)
+- Internal variability vs. forced response separation
+- Baseline period selection for climate projections
+- Regional application of global-scale constraints
+
+**Key Takeaways:**
+
+**Combined Constraint Methodology:**
+1. **Correlation accounting essential**: Must explicitly incorporate covariance between constrained variables (e.g., ΔTgm vs. ΔR/ΔTgm) to avoid overconfidence
+2. **Independent information criterion**: Following Bretherton & Caldwell (2020), combining constraints only valuable if they provide non-redundant information
+3. **Quantify overconfidence risk**: Show sensitivity test of what RRV would be if correlations ignored (e.g., 51% vs. actual 42%)
+4. **Complementary constraint design**: Best combined ECs target different uncertainty sources (thermodynamic vs. dynamic components)
+
+**Baseline Period Selection:**
+5. **Match baseline to forcing**: For GHG-driven changes, use preindustrial baseline; for total anthropogenic forcing, recent past acceptable
+6. **Aerosol considerations**: If baseline includes significant aerosol forcing, need separate constraint for aerosol response
+7. **Sensitivity test alternative baselines**: Show how RRV changes with different baseline choices (e.g., 1851-1900 vs. 1970-2022)
+8. **Regional correspondence check**: Demonstrate climatological values similar between historical baseline and observational period
+
+**Internal Variability Handling:**
+9. **Scale-dependent treatment**: Global mean precipitation internal variability small; grid-point scale can be large
+10. **Time averaging reduces variability**: Multi-decadal means (e.g., 1997-2019) reduce internal variability contribution
+11. **Compare to observational uncertainty**: Show spatial maps of internal variability vs. inter-dataset variance
+12. **Regional EC requires both**: Must quantify observational uncertainty + internal variability at grid scale
+
+**Spatial Pattern Validation:**
+13. **Ensemble split validation**: Separately analyze CMIP5 and CMIP6 to confirm pattern robustness
+14. **Stipple dual significance**: Mark regions with significant correlations in both ensembles
+15. **Physical mechanism explanation**: Connect regional patterns to known climate dynamics (e.g., thermodynamic scaling)
+16. **Outlier sensitivity**: Jackknife test by excluding each model to verify spatial results not driven by single model
+
+**Quantitative Reporting Standards:**
+17. **Central estimate + uncertainty bounds**: Report 50th percentile with [2.5th, 97.5th] percentiles for raw and constrained
+18. **Variance reduction quantification**: State RRV percentages explicitly in main text
+19. **Effect size context**: Show constrained central estimate change relative to climatological value
+20. **Correlation coefficients**: Display r values prominently (figure annotations + text)
+21. **Observational product details**: Describe data sources, merging methods, uncertainty sources for each dataset
+
+**Observational Data Quality:**
+22. **Inter-dataset variance often dominates**: For precipitation, differences between products often larger than internal variability
+23. **Uncertainty source taxonomy**: Station coverage, satellite algorithms, reanalysis methods, bias correction all contribute
+24. **Standard error reporting**: Use SE=s/√n for climatologies, not just standard deviation
+25. **Multiple product comparison**: Use ≥3 independent observational products to capture structural uncertainty
+
+**Manuscript Evolution Strategy:**
+26. **Add quantification progressively**: Original draft qualitative; revised version added ~15 specific numbers to main text
+27. **Expand interpretation**: Move from "variance reduced" to "why this EC works in these regions"
+28. **Supplement to main text migration**: Move key results from supplementary when reviewers request more detail
+29. **Sensitivity analyses preemptive**: Authors added 7 robustness tests beyond what reviewers explicitly requested
+30. **Fix minor errors transparently**: Corrected GPCP value and code bug, noted no impact on conclusions
+
 ---
 
 ### 🔍 Observational Data Analysis
@@ -390,7 +552,7 @@ Use these exemplar reviews to:
 ## Maintenance Notes
 
 - **Last Updated:** October 28, 2025
-- **Total Reviews:** 2
+- **Total Reviews:** 3
 - **Coverage Gaps:** Areas needing more examples
   - Paleoclimate modeling
   - Climate economics/IAMs
@@ -399,7 +561,7 @@ Use these exemplar reviews to:
   - High-resolution process studies
   - Extreme event attribution (needed)
   - XAI method validation (needed)
-  - Observational constraint methods (have 1, need more diversity)  
+  - Observational constraint methods (have 2, need more diversity in constraint types)  
 
 ---
 
@@ -417,12 +579,18 @@ Use these exemplar reviews to:
 | What Are You Doing? | Consult This Review |
 |---------------------|---------------------|
 | Using ML to constrain ESM projections | ✅ Nature Comm 2022 wildfire |
-| Emergent constraints methodology | ✅ Nature Comm 2022 wildfire |
-| Multi-model ensemble analysis | ✅ Nature Comm 2022 wildfire |
-| Observational data quality assessment | ✅ Nature Comm 2022 wildfire |
-| Separating internal variability from forced response | ✅ Nature Comm 2024 Arctic |  
-| Validating rapid transition predictions | ✅ Nature Comm 2024 Arctic |  
-| Science communication for climate risks | ✅ Nature Comm 2024 Arctic |  
+| Emergent constraints methodology | ✅ Nature Comm 2022 wildfire, ✅ Nat Clim Change 2024 precipitation |
+| Combined/multiple constraint frameworks | ✅ Nat Clim Change 2024 precipitation |
+| Addressing overconfidence in constraints | ✅ Nat Clim Change 2024 precipitation |
+| Baseline period selection for projections | ✅ Nat Clim Change 2024 precipitation |
+| Multi-model ensemble analysis | ✅ Nature Comm 2022 wildfire, ✅ Nat Clim Change 2024 precipitation |
+| Observational data quality assessment | ✅ Nature Comm 2022 wildfire, ✅ Nat Clim Change 2024 precipitation |
+| Separating internal variability from forced response | ✅ Nature Comm 2024 Arctic, ✅ Nat Clim Change 2024 precipitation |
+| Validating rapid transition predictions | ✅ Nature Comm 2024 Arctic |
+| Science communication for climate risks | ✅ Nature Comm 2024 Arctic |
+| Extreme precipitation projections | ✅ Nat Clim Change 2024 precipitation |
+| Regional application of global constraints | ✅ Nat Clim Change 2024 precipitation |
+| CMIP5/6 ensemble comparison | ✅ Nat Clim Change 2024 precipitation |
 | Extreme event attribution | ⏳ To be added |
 | XAI method validation | ⏳ To be added |
 
